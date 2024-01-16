@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="هاتف ذكي، هواتف ذكية، أحدث الهواتف الذكية، مواصفات الهواتف الذكية، أسعار الهواتف الذكية">
+    <meta name="author" content="Abdulrahman Hosny">
+    <title>Mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">products</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>iphone 13 pro max</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque non consectetur dolor aspernatur nesciunt. Qui?</p>
+                <a href="#">All Products</a>
+            </div>
+            <div class="image">
+                <img class="img" src="img/0.png" alt="">
+            </div>
+        </div>
+        <div class="icons">
+            <img onclick="phones (this.src); colors('black')" src="img/0.png">
+            <img onclick="phones (this.src); colors('#A9D0F5')" src="img/1.png">
+            <img onclick="phones (this.src); colors('#6E6E6E')" src="img/2.png">
+            <img onclick="phones (this.src); colors('wheat')" src="img/3.png">
+            <img onclick="phones (this.src); colors('red')" src="img/4.png">
+        </div>
+    </div>
+    <script>
+        let img = document.querySelector('.img');
+        let container = document.querySelector('.container');
+
+        function phones(phone) {
+            img.src = phone;
+        };
+        function colors(color){
+            container.style.background = color;
+        }
+
+    </script>
+
+</body>
+
+</html>
